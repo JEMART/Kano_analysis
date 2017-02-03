@@ -69,10 +69,10 @@ kano.quest<-function(F,D,V,NT,abb,dir){
     xlab("")+ylab("")+
     theme(axis.text=element_blank(),
           axis.ticks=element_blank())+
-    geom_text(x=3.9, y=0, label="Baskrav",colour="grey30",size=5)+
-    geom_text(x=3.9, y=4.1, label="Presterare",colour="grey30",size=5)+
-    geom_text(x=0.1, y=0, label="Likgiltiga",colour="grey30",size=5)+
-    geom_text(x=0.1, y=4.1, label="Attraktiva",colour="grey30",size=5)+
+    geom_text(x=3.75, y=0, label="Must-have's",colour="grey30",size=5)+
+    geom_text(x=3.75, y=4.1, label="Key Performers",colour="grey30",size=5)+
+    geom_text(x=0.1, y=0, label="Indifferent",colour="grey30",size=5)+
+    geom_text(x=0.1, y=4.1, label="Delighters",colour="grey30",size=5)+
     coord_cartesian(ylim = c(0.1, 4),xlim=c(0,4))
   
   ggsave(g, file="kano.png", width=200, height=200, units="mm",dpi=300)                        

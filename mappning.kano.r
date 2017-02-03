@@ -344,7 +344,7 @@ library(tm)
 library(RTextTools)
 library(topicmodels)
 
-setwd("C:\\Users\\Jesper\\Documents\\Företaget\\Skript\\Undersökningar")
+setwd("C:\\Users\\Jesper\\Documents\\JEM\\Skript\\Undersökningar")
 stop <- scan('stoppord_egna.txt', what='character',comment.char=';')
                          
 Text.baskrav<-as.character(raw2$Baskrav_text)        
@@ -352,9 +352,9 @@ Text.performer<-as.character(raw2$Key_Perfomer_Text)
 Text.delighter<-as.character(raw2$Delighter_text)
 
 
-corpus<-Text.delighter
+corpus<-Text.baskrav
 #corpus<-corpus[!corpus==""]
-setwd("C:\\Users\\Jesper\\Documents\\Företaget\\Skript\\Undersökningar")
+setwd("C:\\Users\\Jesper\\Documents\\JEM\\Skript\\Undersökningar")
 stop <- scan('stoppord_egna.txt', what='character',comment.char=';')
 df <- do.call("rbind", lapply(corpus, as.data.frame))
 names(df)<-"text"
